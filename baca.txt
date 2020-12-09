@@ -1,0 +1,8 @@
+login aplikasi
+admin
+user : tegarsatyanegara
+pass : tegarsatyanegara
+
+user / pengaju surat
+user : user
+pass :user
