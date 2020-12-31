@@ -78,7 +78,7 @@ class User extends CI_Controller
             $upload_file = $_FILES['file']['name'];
             if ($upload_file) {
                 $config['allowed_types'] = 'xls|xlsx|doc|docx|ppt|pptx|pdf|zip|rar|txt';
-                $config['max_size']     = '2048';
+                $config['max_size']     = '12048';
                 $config['upload_path'] = './assets/files/';
 				$this->load->library('upload', $config);
 				
@@ -101,13 +101,14 @@ class User extends CI_Controller
                     redirect('user/list_berkas');
                 } else {
 
-                    $this->session->set_flashdata('msg', '<div class="alert alert-danger font-weight-bolder" role="alert">UPLOAD GAGAL !..  Ekstensi File Salah / Ukuran file tidak boleh dari 10 mb</div>');
+                    $this->session->set_flashdata('msg', '<div class="alert alert-danger font-weight-bolder" role="alert">Oops.. UPLOAD GAGAL !..  Ekstensi File Salah / Ukuran file tidak boleh dari 10 mb</div>');
                     redirect('user/index');
                 }
             } else {
 
                 $this->session->set_flashdata('msg', '<div class="alert alert-danger font-weight-bolder" role="alert">Oops.. UPLOAD GAGAL !..  File Upload harus disertakan </div>');
-                redirect('user/index');
+				redirect('user/index');
+				
             }
         }
     }

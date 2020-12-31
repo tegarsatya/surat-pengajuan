@@ -1,7 +1,7 @@
     <!-- footer content -->
     <footer>
         <div class="pull-right">
-            Created : <strong>Donny Kurniawan</strong> | Gentelella - Template by <a href="https://colorlib.com">Colorlib</a></a>
+            Created : <strong>Jawa - Ngoding</strong> | Gentelella - Template by <a href="https://colorlib.com">Colorlib</a></a>
         </div>
         <div class="clearfix"></div>
     </footer>
